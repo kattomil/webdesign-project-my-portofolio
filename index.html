@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Emil's Portofolio</title>
+    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-scrollintoview-master/jquery.scrollintoview.min.js"></script>
+
+  </head>
+  <body>    
+    <section id="home" class="text-white tm-font-big tm-parallax">
+      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
+        <div class="container">   
+          <div class="tm-next">
+              <a href="#home" class="navbar-brand">Emil's Portofolio</a>
+          </div>             
+            
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#gallery">Gallery</a>
+              </li>                  
+            </ul>
+          </div>        
+        </div>
+      </nav>
+      
+      <div class="text-center tm-hero-text-container">
+        <div class="tm-hero-text-container-inner">
+          <div class="typewriter">
+            <h1 class="tm-hero-title">Hello and Welcome to my photography portofolio !</h1>
+          </div>
+        </div>        
+      </div>
+
+      <div class="tm-next tm-intro-next">
+        <a href="#gallery" class="text-center tm-down-arrow-link">
+          <i class="fas fa-2x fa-arrow-down tm-down-arrow"></i>
+        </a>
+      </div>      
+    </section>
+
+    <section id="gallery" class="tm-section-pad-top">
+      
+      <div class="container">
+
+            <div class="row tm-content-box">
+                <div class="col-lg-12 col-xl-12">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4 tm-section-title">About me</h2>
+                        <p class="mb-4 tm-intro-text">
+                          Hello, I'm Emil, a student at Universitatea de Vest Timisoara, studying Computer Science in English. For my Web Design project I have decided to make a portofolio with photos that I have taken until now.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    <section id="gallery" class="tm-section-pad-top">
+      <div class="container tm-container-gallery">
+        <div class="row">
+          <div class="text-center col-12">
+              <h2 class="tm-text-primary tm-section-title mb-4">Gallery</h2>
+          </div>            
+        </div>
+
+        <img id = "photo1" img src="img/photo1.png" width="370" height="470">
+        <script>
+        </script>
+        <img id = "photo2" img src="img/photo2.png" width="470" height="470">
+        <img id = "photo3" img src="img/photo3.png" width="370" height="470">
+        <p>&nbsp</p>
+        <img id = "photo4" img src="img/photo4.png" width="400" height="500">
+        <img id = "photo5" img src="img/photo5.png" width="400" height="500">
+        <img id = "photo6" img src="img/photo6.png" width="400" height="500">
+        <p>&nbsp</p>
+        <img id = "photo7" img src="img/photo7.png" width="400" height="500">
+        <img id = "photo8" img src="img/photo8.png" width="400" height="500">
+        <img id = "photo9" img src="img/photo9.png" width="400" height="500">
+        <p>&nbsp</p>
+        <img id = "photo10" img src="img/photo10.png" width="333" height="450">
+        <img id = "photo11" img src="img/photo11.png" width="533" height="450">
+        <img id = "photo12" img src="img/photo12.png" width="333" height="450">
+        <p>&nbsp</p>
+        <img id = "photo13" img src="img/photo13.png" width="400" height="500">
+        <img id = "photo14" img src="img/photo14.png" width="400" height="500">
+        <img id = "photo15" img src="img/photo15.png" width="400" height="500">
+        <p>&nbsp</p>
+        <img id = "photo16" img src="img/photo16.png" width="400" height="500">
+      </section>
+    </section>
+    <script src="js/jquery-1.9.1.min.js"></script>     
+    <script src="slick/slick.min.js"></script>
+    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>     
+    <script src="js/bootstrap.min.js"></script> 
+    <script>
+      $(function(){
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 600, 'easeInOutExpo', function(){
+              window.location.hash = hash;
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
